@@ -78,7 +78,15 @@ const CurrencyConverter = () => {
                     style={styles.input}
                     keyboardType="numeric"
                     value={amount}
-                    onChangeText={setAmount}
+                    onChangeText={(text) => {
+                        if (text === "") {
+                            alert("Please enter a Specific amount.");
+                        } else if (!/^\d*\.?\d*$/.test(text)) {
+                            alert("Please enter a valid number.");
+                        } else {
+                            setAmount(text);
+                        }
+                    }}
                     placeholder="Enter amount"
                     placeholderTextColor="#777"
                 />
