@@ -1,7 +1,7 @@
 1: Clone the Project 
 
-git clone <your-repo-link>
-cd <your-project-folder>
+git clone git@github.com:PraneethRahee/CurrencyConvertor.git
+cd CurrencyConvertor
 
 
 2: Install Dependencies:
